@@ -85,7 +85,8 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                       children: [
                         Text(
                           userProfile!['fullName'] ?? '',
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 4),
                         Text(userProfile!['username']),
@@ -125,14 +126,15 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 onPressed: () {
                   // Profil düzenleme sayfasına yönlendirme
                 },
-                child: Text('Profili Düzenle'),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
-                  onPrimary: Colors.white,
+                  backgroundColor: Colors.blue, // `primary` yerine
+                  foregroundColor: Colors.white, // `onPrimary` yerine
                   minimumSize: Size(double.infinity, 36),
                 ),
+                child: Text('Profili Düzenle'),
               ),
             ),
+
             const SizedBox(height: 16),
             Divider(),
             // Gönderiler
@@ -155,4 +157,4 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       ),
     );
   }
-} 
+}

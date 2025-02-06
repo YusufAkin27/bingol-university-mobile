@@ -29,7 +29,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final accessToken = prefs.getString('accessToken') ?? '';
 
     final response = await http.get(
-      Uri.parse('http://localhost:8080/v1/api/student/account-details/${widget.userId}'),
+      Uri.parse(
+          'http://localhost:8080/v1/api/student/account-details/${widget.userId}'),
       headers: {
         'Authorization': 'Bearer $accessToken',
       },
@@ -58,7 +59,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final accessToken = prefs.getString('accessToken') ?? '';
 
     final response = await http.post(
-      Uri.parse('http://localhost:8080/v1/api/friendsRequest/send/${widget.userId}'),
+      Uri.parse(
+          'http://localhost:8080/v1/api/friendsRequest/send/${widget.userId}'),
       headers: {
         'Authorization': 'Bearer $accessToken',
       },
@@ -90,7 +92,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final accessToken = prefs.getString('accessToken') ?? '';
 
     final response = await http.delete(
-      Uri.parse('http://localhost:8080/v1/api/friendsRequest/cancel/$requestId'),
+      Uri.parse(
+          'http://localhost:8080/v1/api/friendsRequest/cancel/$requestId'),
       headers: {
         'Authorization': 'Bearer $accessToken',
       },
@@ -170,7 +173,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ? _cancelFriendRequest
                       : _sendFriendRequest,
               style: ElevatedButton.styleFrom(
-                primary: isFollowing
+                backgroundColor: isFollowing
                     ? Colors.green
                     : isRequestSent
                         ? Colors.orange
@@ -184,7 +187,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         : 'Takip Et',
               ),
             ),
-            if (userProfile!['isPrivate'] == false && userProfile!['posts'] != null)
+            if (userProfile!['isPrivate'] == false &&
+                userProfile!['posts'] != null)
               ...userProfile!['posts'].map<Widget>((post) {
                 return Card(
                   margin: EdgeInsets.all(8.0),
@@ -205,4 +209,4 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ),
     );
   }
-} 
+}

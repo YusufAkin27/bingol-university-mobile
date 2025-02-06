@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   // Logo
-                  Image.asset('assets/images/logo.webp', height: 100),
+                  Image.asset('assets/images/logo.png', height: 100),
                   const SizedBox(height: 20),
                   
                   // Hoşgeldiniz Metni
