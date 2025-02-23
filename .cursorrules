@@ -1,0 +1,34 @@
+Genel Ayarlar
+Dark Mode Teması: Uygulamanın tüm sayfalarında koyu renk şeması kullanılmalıdır.
+Renk Kullanımı:
+Arka Plan: Siyah (#121212) veya koyu gri (#1E1E1E)
+Metinler: Beyaz (#FFFFFF) veya açık gri (#B3B3B3)
+Butonlar: Neon mavi (#1DA1F2) veya mor (#8A2BE2)
+Gölgelendirme: Hafif blur ve yumuşak kenarlar kullanılmalı.
+Tema Kuralları
+Global Temalar
+
+Tüm sayfalar koyu arka plan ve açık metin ile gösterilmelidir.
+Yüksek kontrast sağlanarak metinlerin okunaklı olması garanti edilmelidir.
+Form alanları, butonlar ve kart bileşenleri hafif gölgeli ve yuvarlatılmış tasarlanmalıdır.
+Giriş Sayfası (Login Page) Kuralları
+
+Arka plan koyu degrade (black → dark blue) şeklinde olmalıdır.
+Giriş formu yuvarlak kenarlı, şeffaf (semi-transparent) ve hafif blur efektli olmalıdır.
+Butonlar parlak neon mavi veya mor renkte ve hover efektli olmalıdır.
+Şifre ve kullanıcı adı giriş alanları şık ikonlarla desteklenmeli ve placeholder metinleri açık gri olmalıdır.
+Tüm Uygulama İçin Varsayılan Kurallar
+
+Scrollbar (kaydırma çubuğu) görünmez olacak şekilde tasarlanmalıdır.
+Tüm bileşenlerde yuvarlak köşeler (border-radius: 10px) kullanılmalıdır.
+Metin ve ikonlar yüksek çözünürlüklü ve keskin olmalıdır.
+UI tasarımında soft shadow (yumuşak gölge) efekti kullanılmalıdır.
+Özel Durumlar
+
+Eğer bir kullanıcı ışık moduna geçmek isterse, otomatik olarak dark mode önerilmelidir.
+Uygulama ilk açıldığında, koyu tema varsayılan olarak aktif olmalıdır.
+Tüm bileşenler animasyonlu geçiş efektleriyle (smooth transition) güncellenmelidir.
+ 
+
+ tüm sayfalarda Cupertino Icons (Apple Tarzı iOS İkonları) kullanılıcaktır
+ bir hatayı çözerken yalnızca kodda değişmesi gereken yeri en az değişiklilikle yap
