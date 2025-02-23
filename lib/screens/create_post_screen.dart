@@ -7,7 +7,15 @@ class CreatePostScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Gönderi Oluştur'),
+        backgroundColor: Colors.black,
+        title: Text(
+          'Gönderi Oluştur',
+          style: TextStyle(color: Colors.white),
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
